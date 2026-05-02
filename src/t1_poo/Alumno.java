@@ -74,7 +74,7 @@ public class Alumno {
         {
             System.out.println("No puede ser un dato en blanco");
         }
-        else if(!nombre.trim().matches("[a-zA-ZáéíóúÁÉÍÓÚñÑ]+"))
+        else if(!nombre.trim().matches("[a-zA-]+"))
         {
             System.out.println("solo se permiten letras");
         }
@@ -93,7 +93,7 @@ public class Alumno {
         {
             System.out.println("No puede ser un dato en blanco");
         }
-        else if(!apellidoPaterno.trim().matches("[a-zA-ZáéíóúÁÉÍÓÚñÑ]+"))
+        else if(!apellidoPaterno.trim().matches("[a-zA-]+"))
         {
             System.out.println("solo se permiten letras");
         }
@@ -112,7 +112,7 @@ public class Alumno {
         {
             System.out.println("No puede ser un dato en blanco");
         }
-        else if(!apellidoMaterno.trim().matches("[a-zA-ZáéíóúÁÉÍÓÚñÑ]+"))
+        else if(!apellidoMaterno.trim().matches("[a-zA-]+"))
         {
             System.out.println("solo se permiten letras");
         }
@@ -188,7 +188,7 @@ public class Alumno {
             System.out.println("Seleccione tipo de beca:");
             System.out.println("  1. Sin beca     (100% de la pensión)");
             System.out.println("  2. Beca parcial (50% de la pensión)");
-            System.out.println("  3. Beca total   (exento de pago)");
+            System.out.println("  3. Beca total   (No paga)");
             try {
                 op = Integer.parseInt(sc.nextLine());
                 switch (op) {
