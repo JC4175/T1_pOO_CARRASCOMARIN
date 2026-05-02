@@ -12,6 +12,24 @@ import java.util.ArrayList;
  * @author zakkc
  */
 public class AlumnoControlador {
+    public ArrayList<Alumno> listaAlumno = new ArrayList<>();
     
+    public AlumnoControlador()
+    {
+        this.listaAlumno = new ArrayList<>();
+    }
+    
+    public void AgregarALumno(Alumno e)
+    {
+        listaAlumno.add(e);
+    }
+    
+    public void MostrarAlumno()
+    {
+        for(Alumno al:listaAlumno)
+        {
+            al.Mostrar();
+        }
+    }
     
 }
